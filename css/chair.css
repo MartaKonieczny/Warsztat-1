@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: black;
+    font-family: ralewaylight;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+.header__container{
+    text-align:center;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-list__item {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.color{
+    color: #00b3ff!important;
+}
+
+.nav-list__link{
+    text-decoration: none;
+    padding: 20px 0;
+    display: block;
+    text-transform: uppercase;
+}
+
+.subnav-list{
+    position: absolute;
+    border: 5px solid red;
+    left: -50px;
+    right: -50px;
+    border-top: 0;
+    display: none;
+}
+
+.nav-list__item:hover > .subnav-list {
+    display: block;
+    background: black;
+}
+
+.subnav-list__link {
+    text-transform: uppercase;
+}
