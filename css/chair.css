@@ -14,7 +14,6 @@
 }
 
 body{
-    background-color: black;
     font-family: ralewaylight;
 }
 
@@ -42,6 +41,7 @@ nav{
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    font-weight: bold
 }
 
 li{
@@ -55,10 +55,11 @@ a{
 h1{
     text-transform: uppercase;
     padding: 10px;
+
 }
 
 .color{
-    color: #00b3ff!important;
+    color: #00CC99!important;
 }
 
 .nav-list__link{
@@ -69,12 +70,11 @@ h1{
 }
 
 .subnav-list{
-    position: absolute;
-    border: 5px solid red;
     left: -50px;
     right: -50px;
     border-top: 0;
     display: none;
+    position: absolute;
 }
 
 .nav-list__item:hover > .subnav-list {
@@ -84,4 +84,65 @@ h1{
 
 .subnav-list__link {
     text-transform: uppercase;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, white, silver);
+    text-align:center;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 50px;
+
+
+}
+
+.left-triangle {
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #00CC99;
+    border-left: 3px solid #00CC99;
+    border-right: 3px solid transparent;
+    padding-right: 50px;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.right-triangle {
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid #00CC99;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #00CC99;
+    padding-left: 50px;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.first h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.first p {
+    font-size: 18px;
+
+}
+
+button{
+    background-color: #00CC99;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin: 50px;
+    cursor: pointer;
+
+}
+
+.first a{
+    font-size: 18px;
+
 }
