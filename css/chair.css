@@ -146,3 +146,35 @@ button{
     font-size: 18px;
 
 }
+
+/* second section*/
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.second-divs {
+    margin-right: 15px;
+    position: relative;
+
+}
+
+.second-h3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: rgba(244,244,244, .3);
+    width: 100%;
+}
+
+.second-last-div{
+    border: 1px solid silver;
+}
+
+.second-last-div h3, p {
+    padding-top: 10px;
+}
